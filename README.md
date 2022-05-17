@@ -34,6 +34,12 @@
 
 ## 使用说明
 
+### 安装依赖
+
+```shell	
+npm install
+```
+
 ### 配置数据库
 
 > 数据库配置文件为 server/config/config.js
