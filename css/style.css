@@ -1,0 +1,172 @@
+header {
+  background: #d43c33;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 84px;
+  padding: 0 15px;
+}
+
+header .logo {
+  width: 142px;
+  height: 25px;
+}
+
+.download_btn {
+  width: 100px;
+  height: 36px;
+  border-radius: 36px;
+  color: #d43c33;
+  border: none;
+  outline: none;
+}
+
+/* 头部样式结束 --------------------------- */
+
+/* 单选按钮隐藏 */
+/* []属性选择器 */
+
+/* 选项切换 */
+
+input[name="tab"] {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #efefef;
+}
+
+nav label {
+  display: block;
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+  font-size: 0.46875rem;
+}
+
+.view {
+  width: 100%;
+  overflow: hidden;
+}
+
+.screen {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  /* background: #333; */
+}
+.viewport {
+  width: 300%;
+  /* background: chartreuse; */
+  /* margin-left: -100%; */
+}
+
+/* 选中后切换样式 */
+#t1:checked ~ .view > .viewport {
+  margin-left: 0%;
+}
+
+#t2:checked ~ .view > .viewport {
+  margin-left: -100%;
+}
+
+#t3:checked ~ .view > .viewport {
+  margin-left: -200%;
+}
+
+.viewport {
+  transition: margin-left 0.4s;
+}
+
+/* 变成红色 */
+
+#t1:checked ~ nav > label:first-child {
+  font-weight: bold;
+  color: #d43c33;
+}
+
+#t2:checked ~ nav > label:nth-child(2) {
+  font-weight: bold;
+  color: #d43c33;
+}
+#t3:checked ~ nav > label:nth-child(3) {
+  font-weight: bold;
+  color: #d43c33;
+}
+
+/* 样式切换结束 ---------------------------*/
+
+.rec_music li img {
+  width: 100%;
+}
+.rec_music li {
+  width: 32.7%;
+  font-size: 0.4375rem;
+  margin-bottom: 0.46875rem;
+}
+.rec_music {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  /* background-color: #d43c33; */
+  padding-left: 9px;
+  margin-bottom: 14px;
+  font-size: 1.0625rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.title::before {
+  content: " ";
+  width: 2px;
+  height: 16px;
+  background-color: #d33a31;
+
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-right:9px;
+}
+
+
+/* 最新音乐 */
+.new_song li{
+  height: 3rem;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  padding: .25rem .46875rem 0 .46875rem;
+}
+
+
+.song_name{
+  font-size: 1.0625rem;
+  color: #333;
+}
+
+.song_info{
+  font-size: .75rem;
+  color: gray;
+}
+
+.play_btn{
+  width: 1.375rem;
+  height: 1.375rem;
+  float: right;
+  background: url(../img/index_icon_2x.png) no-repeat;
+  /* 第二步：处理倍数大小 */
+  background-size: 10.375rem 6.0625rem;
+  /* 第三步骤：调整位置 */
+  background-position: -1.5rem 0;
+  position: relative;
+  top: -1.75rem;
+}

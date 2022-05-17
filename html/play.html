@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/play.css" />
+    <link
+      rel="stylesheet"
+      href="../lib/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="comments">
+      <div class="comments_button"><button>评论</button></div>
+      <div class="comments_container">
+        <h3>精彩评论</h3>
+        <ul class="comments_list">
+          <li>
+            <div class="com_header">
+              <div>
+                <p>评论人</p>
+                <p>9月10号</p>
+              </div>
+              <div>
+                <span class="fa fa-thumbs-o-up"></span>
+                <span>400</span>
+              </div>
+            </div>
+
+            <div class="com_content">
+              <p>
+                这首歌视觉mv里的一些情节场景和Heaven的mv遥相呼应，泪目了谁懂[多多难过]
+                把天堂抛之脑后，这样我们才能在一起。即使离开洁白的云层，你仍永远是我的天使。
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="send_comment">
+          <input id="name" type="text" placeholder="评论人" />
+          <textarea id="content" rows="5" name="content"></textarea>
+          <button id="send_comments">提交</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <audio id="myaudio"></audio>
+      <!-- 信息层 -->
+      <div class="info">
+        <!-- 唱碟 -->
+        <div class="disk">
+          <div class="album_img">
+            <img />
+          </div>
+        </div>
+
+        <!-- 歌词 -->
+        <div class="lyric">
+          <h3>歌词标题</h3>
+          <p></p>
+        </div>
+
+        <div class="slider">
+          <input type="range" id="slider" value="0" />
+        </div>
+      </div>
+
+      <div class="mask"></div>
+      <div class="bg">
+        <img />
+      </div>
+    </div>
+
+    <!-- 工具库优先引入 -->
+    <script src="../js/getEle.js"></script>
+    <script src="../node_modules/lyric-parser/dist/lyric.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/play.js"></script>
+    <script src="../js/postcomment.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+.search_default,
+.search_adv,
+.search_result {
+  width: 100%;
+  min-height: 100%;
+}
+
+.search_adv,
+.search_result {
+  display: none;
+}
+
+.search_bar {
+  padding: 0 0 0.9375rem 0;
+  border-bottom: 1px solid #efefef;
+  position: relative;
+}
+
+#search {
+  width: 80%;
+  display: block;
+  margin: auto;
+  height: 1.875rem;
+  border-radius: 1.875rem;
+  border: none;
+  outline: none;
+  margin-top: 0.9375rem;
+  padding: 0 0.9375rem;
+  background-color: #f1f1f1;
+}
+
+.container {
+  font-size: 0.875rem;
+}
+
+.container .search_title {
+  color: gray;
+  font-size: 0.9375rem;
+  padding-top: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+.hot_search {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.9375rem;
+}
+
+.hot_search span {
+  font-size: 0.9375rem;
+  padding: 0.3125rem 0.9375rem;
+  border-radius: 0.9375rem;
+  border: 1px solid #efefef;
+  margin-right: 0.3125rem;
+  margin-bottom: 0.3125rem;
+}
+
+.search_history ul li,
+.search_adv_list {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 0.75rem;
+  height: 0.9375rem;
+  border-bottom: 1px solid #efefef;
+  padding: 1.25rem 0.875rem;
+}
+
+.phone {
+  color: gray;
+  font-size: .9375rem;
+  position: absolute;
+  top: .5rem;
+  right: 2.5rem;
+}
+
+.phone_active {
+  color: #d43c33;
+}
